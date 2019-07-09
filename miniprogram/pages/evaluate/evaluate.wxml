@@ -1,0 +1,37 @@
+<!--顶部影片信息-->
+<view class="top" >
+  <view class="img-cover" style="background:url({{detail.images.small}}) no-repeat top/cover"></view>
+  <view class="color-cover"></view>
+  <image class="images" src="{{detail.images.small}}"></image>
+  <view class="details">
+    <view class="title">{{detail.title}}</view>
+    <view class="average">{{detail.rating.average}}分</view>
+    <view class="tags">
+      <text  wx:for="{{detail.tags}}" wx:key="{{detail.id}}">{{item}}/</text>
+    </view>
+    <view>导演：{{detail.directors[0].name}}</view>
+    
+  </view>
+</view>
+<view class="movie-detail">{{detail.summary}}</view>
+<!--点击星星评分-->
+<view class="grade">
+  <view>点击星星评分</view>
+  <van-rate value="{{ grade }}" bind:change="onGradeChange" />
+</view>
+<!--评价-->
+  <van-field label="评价"
+    value="{{ content }}"
+    placeholder="留下些评价..."
+    bind:change="onContentChange"
+  />
+
+<!--上传图片-->
+<view class="upload">
+<van-button type="warning" size="small" bindtap="uploadImg">上传图片</van-button>
+  <!--图片区域-->
+  <view class="img-container">
+    <image wx:for="{{images}}" wx:key="index" src="{{item}}"></image>
+  </view>
+</view>
+<button class="submit" bindtap='submitEvaluate'>提交评价</button>

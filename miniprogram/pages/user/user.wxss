@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  height: 450rpx;
+  background: #050;
+  color: #fff;
+}
+
+.detail {
+  padding: 20rpx;
+}
+
+.detail view:nth-child(2) {
+  margin-top: 20rpx;
+}
+
+.userImgContainer {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 60rpx;
+}
+
+.userNickName, .userCity{
+  margin-top: 20rpx;
+}

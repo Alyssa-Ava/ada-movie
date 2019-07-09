@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.detail {
+  width: 100%;
+  height: 300rpx;
+  margin: 0;
+  padding: 5rpx;
+  margin-left: 5rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ccc;
+}
+
+.my-images {
+  height: 100%;
+  flex: 0 1 200rpx;
+  margin-left: 5rpx;
+}
+
+.movie-details {
+  height: 100%;
+  padding: 20rpx;
+  flex: 1;
+  font-size: 12px;
+}
+
+.movie-details view {
+  margin-top: 10rpx;
+}
+
+.evaluate {
+  height: 60rpx;
+  background: #f00;
+  font-size: 13px;
+  text-align: center;
+  line-height: 60rpx;
+  color: #fff;
+  flex: 0 2 150rpx;
+  margin-top: 120rpx;
+  margin-right: 10rpx;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.grade view {
+  display: inline-block;
+  color: #f00;
+}
+
+/* .protagonist {
+  max-height: 80rpx;
+  overflow: hidden;
+} */
+
+.protagonist text {
+  display: inline-block;
+  padding-right: 5rpx;
+}

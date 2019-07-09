@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="userImgContainer">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="userNickName"></open-data>
+  <open-data type="userCity" lang="zh_CN" class="userCity"></open-data>
+</view>
